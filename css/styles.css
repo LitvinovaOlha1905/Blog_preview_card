@@ -1,0 +1,24 @@
+body {
+   font-family: "Figtree", sans-serif;
+   font-size: 16px;
+   font-style: none;
+   color: hsl(0, 0%, 7%);
+   background: hsl(47, 88%, 63%);
+}
+
+.container {
+   max-width: 384px;
+   height: auto;
+   padding: 24px;
+   border: 1px solid hsl(0, 0%, 7%);
+   border-radius: 20px;
+   box-shadow: 8px 8px 0 0 #000;
+   background: hsl(0, 0%, 100%);
+
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.image-card{}
