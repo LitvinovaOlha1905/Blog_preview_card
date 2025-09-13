@@ -1,9 +1,18 @@
+:root {
+   --text-color: hsl(0, 0%, 7%);
+   --text-card: #6b6b6b;
+   --link-color: #f4d04e;
+   --background-color: hsl(47, 88%, 63%);
+   --background-color-card: hsl(0, 0%, 100%);
+   --button-color: #f4d04e;
+   --button-color-hover: rgba(244, 208, 78, 0.6);
+}
+
 body {
    font-family: "Figtree", sans-serif;
    font-size: 16px;
-   font-style: none;
-   color: hsl(0, 0%, 7%);
-   background: hsl(47, 88%, 63%);
+   color: var(--text-color);
+   background: var(--background-color);
 }
 
 .container {
@@ -13,7 +22,7 @@ body {
    border: 1px solid hsl(0, 0%, 7%);
    border-radius: 20px;
    box-shadow: 8px 8px 0 0 #000;
-   background: hsl(0, 0%, 100%);
+   background: var(--background-color-card);
 
    position: absolute;
    top: 50%;
@@ -21,4 +30,70 @@ body {
    transform: translate(-50%, -50%);
 }
 
-.image-card{}
+.image-card {
+   max-width: 100%;
+   height: auto;
+   display: block;
+}
+
+.content-card {
+   max-width: 336px;
+   margin: 24px 0;
+}
+
+.button-card {
+   display: block;
+   margin: 0 0 15px 0;
+   border-radius: 4px;
+   padding: 4px 12px;
+   font-weight: 800;
+   font-size: 14px;
+   line-height: 1.5;
+   text-align: center;
+   cursor: pointer;
+   border: currentColor;
+   color: var(--text-color);
+   background: var(--button-color);
+}
+
+.button-card:hover,
+.button-card:focus{
+   background-color: var(--button-color-hover);
+}
+
+.text {
+   margin: 0;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.5;
+}
+
+.title-card {
+   display: block;
+   margin: 12px 0;
+   font-weight: 800;
+   font-size: 24px;
+   line-height: 1.5;
+   cursor: pointer;
+}
+
+.title-card:hover,
+.title-card:focus{
+   color: var(--link-color);
+}
+
+
+.text-card {
+   font-size: 16px;
+   color: var(--text-card);
+}
+
+.autor{
+   display: flex;
+   gap: 12px;
+   align-items: center;
+}
+
+.text-autor{
+   font-weight: 800;
+}
